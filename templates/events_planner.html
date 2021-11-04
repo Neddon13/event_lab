@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/events_planner" method="post">
+    <label for="date">Date</label>
+    <input type="date" name='date' id="date">
+    
+    <label for="name_of_event">Name of Event</label>
+    <input type="text" name="name_of_event" id="event name">
+
+    <label for="number_of_guests">Number of Guests</label>
+    <input type="int" name="number_of_guests" id="number of guests">
+
+    <label for="room_location">Room Location</label>
+    <input type="text" name="room_location" id="room location">
+
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+
+    <input type="submit" value="Add Event">
+</form>
+
+{% endblock %}
